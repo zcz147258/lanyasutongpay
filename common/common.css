@@ -1,0 +1,44 @@
+/* flex布局 */
+.u-f,.u-f-ac,.u-f-ajc{
+	display: flex;
+}
+.u-f-ac,.u-f-ajc{
+	align-items: center;
+}
+.u-f-ajc{
+	justify-content: center;
+}
+.u-f-jsb{
+	justify-content: space-between;
+}
+.u-f1{
+	flex: 1;
+}
+.u-f-column{
+	flex-direction: column;
+}
+.u-default-border{
+	border: 3rpx solid #dedede;
+	border-radius: 5px;
+	font-size: 32rpx;
+}
+.u-active-border{
+	border: 3rpx solid #007AFF;
+	background: #007AFF;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 32rpx;
+}
+/* 将控件至于底部 */
+.u-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.u-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}

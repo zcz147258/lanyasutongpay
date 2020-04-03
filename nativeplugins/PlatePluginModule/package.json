@@ -1,0 +1,53 @@
+{
+	"name": "PlatePluginModule",
+	"id": "PlatePluginModule",
+	"version": "1.0",
+	"description": "车牌插件",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"android": {
+			"plugins": [{
+				"type": "module",
+				"name": "PlatePluginModule",
+				"class": "uni.dcloud.io.uniplugin.UniPlateModule"
+			}],
+			"abis": [
+				"armeabi-v7a"
+			],
+
+			"integrateType": "aar",
+			"minSdkVersion": "21",
+			"permissions": [
+				"android.permission.CAMERA",
+				"android.permission.RECORD_AUDIO",
+				"android.permission.WRITE_EXTERNAL_STORAGE",
+				"android.permission.READ_EXTERNAL_STORAGE",
+				"android.permission.INTERNET"
+			]
+		},
+		"ios": {
+			"plugins": [{
+				"type": "module",
+				"name": "PlatePluginModule",
+				"class": "PlateOCRModule"
+			}],
+			"integrateType": "library",
+			"deploymentTarget": "8.0",
+			"resources" : [
+				"UniPlugin-Plate.bundle",
+				"7332DBAFD2FD18301EF6.lic"
+			        ],
+			"frameworks": [
+				"AVFoundation.framework",
+				"CoreMedia.framework",
+				"AudioToolBox.framework",
+				"MobileCoreServices.framework"
+			],
+			"privacies": [
+				"NSCameraUsageDescription",
+				"NSPhotoLibraryUsageDescription"
+			]
+			
+		}
+	}
+}
